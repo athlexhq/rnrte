@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
-import {WebView} from 'react-native-webview';
-import {actions, messages} from './const';
-import {Keyboard, Platform, StyleSheet, TextInput, View, Linking} from 'react-native';
-import {createHTML} from './editor';
+import React, { Component } from 'react';
+import { Keyboard, Linking, Platform, StyleSheet, TextInput, View } from 'react-native';
+import { WebView } from 'react-native-webview';
+import { actions, messages } from './const';
+import { createHTML } from './editor';
 
 const PlatformIOS = Platform.OS === 'ios';
 
@@ -271,7 +271,6 @@ export default class RichTextEditor extends Component {
           ref={that.setRef}
           onMessage={that.onMessage}
           originWhitelist={['*']}
-          dataDetectorTypes={['none']}
           domStorageEnabled={false}
           bounces={false}
           javaScriptEnabled={true}
