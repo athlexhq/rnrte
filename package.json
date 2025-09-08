@@ -1,5 +1,5 @@
 {
-  "name": "2nd fork of RTE",
+  "name": "rte-fork",
   "description": "Rich-text editor",
   "version": "1.9.0",
   "main": "src/index.js",
